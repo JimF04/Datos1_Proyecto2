@@ -123,7 +123,7 @@ public class AlgebraicTree {
 
 
     public static void main(String[] args) {
-        String infix = "( 4 * 5 ) + 3 )";
+        String infix = "5 * 5 + 1";
         System.out.println("Infix: " + infix);
         String postfix = infixToPostfix(infix);
         System.out.println("Postfix: " + postfix);
