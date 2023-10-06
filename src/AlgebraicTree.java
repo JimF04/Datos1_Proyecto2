@@ -46,15 +46,17 @@ public class AlgebraicTree {
     public static String infixToPostfix(String infix) {
         StringBuilder postfix = new StringBuilder();
         Stacks.Stack_LinkedList stack = new Stacks().new Stack_LinkedList();
+        String preprocessed = preprocess(infix);
 
-        for (String token : infix.split("\\s+")) {
+        for (String token : preprocessed.split("\\s+")) {
             if (Character.isDigit(token.charAt(0))) {
                 postfix.append(token);
                 postfix.append(' ');
             } else if (isOperator(token)) {
                 while (!stack.isEmpty() && isOperator((String) stack.peek())) {
                     String topOperator = (String) stack.peek();
-                    if (precedence(topOperator) >= precedence(token)) {
+                    if ((token.equals("**") && precedence(topOperator) > precedence(token))
+                            || (!token.equals("**") && precedence(topOperator) >= precedence(token))) {
                         postfix.append(stack.pop());
                         postfix.append(' ');
                     } else {
@@ -82,7 +84,7 @@ public class AlgebraicTree {
     public static TreeNode postfixToTree(String postfix){
         Stacks.Stack_LinkedList stack = new Stacks().new Stack_LinkedList();
         for (String token : postfix.split("\\s+")){
-            if (Character.isDigit(token.charAt(0))){
+            if (token.matches("\\d+")){
                 stack.push(new TreeNode(token));
             } else if (isOperator(token)){
                 TreeNode right = (TreeNode) stack.pop();
@@ -93,14 +95,14 @@ public class AlgebraicTree {
         return (TreeNode) stack.pop();
     }
 
-    public static int evaluate(TreeNode tree){
+    public static float evaluate(TreeNode tree){
         if (tree == null){
             return 0;
         } else if (tree.getLeft() == null && tree.getRight() == null){
             return Integer.parseInt(tree.getElement());
         } else {
-            int left = evaluate(tree.getLeft());
-            int right = evaluate(tree.getRight());
+            float left = evaluate(tree.getLeft());
+            float right = evaluate(tree.getRight());
             String operator = tree.getElement();
             switch (operator){
                 case "+":
@@ -112,18 +114,30 @@ public class AlgebraicTree {
                 case "/":
                     return left / right;
                 case "**":
-                    return (int) Math.pow(left, right);
+                    return (float) Math.pow(left, right);
                 case "%":
-                    return left % right;
+                    return left/100 * right;
                 default:
                     return 0;
             }
         }
     }
 
+    public static String preprocess(String infix) {
+        // Eliminar todos los espacios
+        String noSpaces = infix.replaceAll("\\s+", "");
+
+        // Añadir espacios alrededor de todos los operadores
+        String spaced = noSpaces.replaceAll("(\\*\\*|[+\\-*/()%^])", " $1 ");
+
+        // Eliminar espacios dobles
+        String cleaned = spaced.replaceAll("\\s+", " ").trim();
+        return cleaned;
+    }
+
 
     public static void main(String[] args) {
-        String infix = "5 * 5 + 1";
+        String infix = "((3 *2 ) ** 2 ) % 50";
         System.out.println("Infix: " + infix);
         String postfix = infixToPostfix(infix);
         System.out.println("Postfix: " + postfix);
