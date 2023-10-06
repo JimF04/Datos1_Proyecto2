@@ -1,12 +1,9 @@
-package Chatjava;
+
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
 public class Cliente extends javax.swing.JFrame implements Runnable{
@@ -925,7 +922,7 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
             ServerSocket server = new ServerSocket(0);
             Socket socket = new Socket("127.0.0.1",5000);
 
-            nombre_cliente.setText("cliente " + server.getLocalPort() + ": ");
+
             String puerto_codificado = String.valueOf("0" + server.getLocalPort());
 
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
@@ -941,7 +938,7 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
                 DataInputStream datos = new DataInputStream(serversocker.getInputStream());
 
                 String mensajes = datos.readUTF();
-                Campos_textoC.append("\n"+mensajes);
+
             }
 
         } catch (Exception e) {
