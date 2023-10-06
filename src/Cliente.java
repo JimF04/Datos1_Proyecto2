@@ -51,8 +51,10 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
         jButton32 = new javax.swing.JButton();
         jButton33 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
+        jButton54 = new javax.swing.JButton();
+        jButton55 = new javax.swing.JButton();
         jTabbedPane2 = new javax.swing.JTabbedPane();
-        jPanel1 = new javax.swing.JPanel();
+        Ventana_Algebraica = new javax.swing.JPanel();
         nombre_cliente2 = new javax.swing.JLabel();
         txt_mensaje2 = new javax.swing.JTextField();
         jButton35 = new javax.swing.JButton();
@@ -71,7 +73,21 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
         jButton48 = new javax.swing.JButton();
         jButton49 = new javax.swing.JButton();
         jButton50 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        jButton51 = new javax.swing.JButton();
+        jButton52 = new javax.swing.JButton();
+        jButton53 = new javax.swing.JButton();
+        Ventana_Logica = new javax.swing.JPanel();
+        nombre_cliente3 = new javax.swing.JLabel();
+        txt_mensaje3 = new javax.swing.JTextField();
+        jButton65 = new javax.swing.JButton();
+        jButton66 = new javax.swing.JButton();
+        jButton67 = new javax.swing.JButton();
+        jButton68 = new javax.swing.JButton();
+        jButton69 = new javax.swing.JButton();
+        jButton70 = new javax.swing.JButton();
+        jButton71 = new javax.swing.JButton();
+        jButton56 = new javax.swing.JButton();
+        jButton57 = new javax.swing.JButton();
 
         nombre_cliente1.setText("Calculadora");
 
@@ -194,6 +210,20 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
             }
         });
 
+        jButton54.setText("(");
+        jButton54.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton54ActionPerformed(evt);
+            }
+        });
+
+        jButton55.setText(")");
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         nombre_cliente2.setText("Calculadora");
@@ -289,7 +319,7 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
             }
         });
 
-        jButton47.setText("x");
+        jButton47.setText("*");
         jButton47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton47ActionPerformed(evt);
@@ -310,35 +340,44 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
             }
         });
 
-        jButton50.setText("^");
+        jButton50.setText("**");
         jButton50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton50ActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(57, 57, 57)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                .addComponent(jButton42)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButton41)
-                                                .addGap(18, 18, 18)
-                                                .addComponent(jButton40)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButton48)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(jButton39)
-                                                .addGap(173, 173, 173))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(jPanel1Layout.createSequentialGroup()
+        jButton51.setText("=");
+        jButton51.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton51ActionPerformed(evt);
+            }
+        });
+
+        jButton52.setText("(");
+        jButton52.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton52ActionPerformed(evt);
+            }
+        });
+
+        jButton53.setText(")");
+        jButton53.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton53ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Ventana_AlgebraicaLayout = new javax.swing.GroupLayout(Ventana_Algebraica);
+        Ventana_Algebraica.setLayout(Ventana_AlgebraicaLayout);
+        Ventana_AlgebraicaLayout.setHorizontalGroup(
+                Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
+                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
+                                                .addGap(43, 43, 43)
+                                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
                                                                 .addComponent(jButton35)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                                 .addComponent(jButton36)
@@ -347,74 +386,223 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                                                 .addComponent(jButton38)
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(jButton50))
-                                                        .addComponent(txt_mensaje2, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addComponent(jButton43)
+                                                                .addComponent(jButton50, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
+                                                                .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                                 .addGap(18, 18, 18)
-                                                                .addComponent(jButton44)
+                                                                .addComponent(jButton51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
+                                                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                                                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
+                                                                                .addComponent(jButton42)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                                .addComponent(jButton41)
+                                                                                .addGap(18, 18, 18)
+                                                                                .addComponent(jButton40)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                                .addComponent(jButton48))
+                                                                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
+                                                                                .addComponent(jButton43)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                                .addComponent(jButton44)
+                                                                                .addGap(18, 18, 18)
+                                                                                .addComponent(jButton45)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                                                .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(jButton45)
+                                                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(jButton49)
+                                                                        .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(jButton49)
-                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(jButton47)))
-                                                .addGap(0, 0, Short.MAX_VALUE))
-                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addGap(116, 116, 116)
-                                                                .addComponent(nombre_cliente2))
-                                                        .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(jButton53)
+                                                                        .addComponent(jButton52)))
+                                                        .addComponent(txt_mensaje2)))
+                                        .addGroup(Ventana_AlgebraicaLayout.createSequentialGroup()
+                                                .addGap(106, 106, 106)
+                                                .addComponent(nombre_cliente2)))
+                                .addContainerGap(79, Short.MAX_VALUE))
         );
-        jPanel1Layout.setVerticalGroup(
-                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
+        Ventana_AlgebraicaLayout.setVerticalGroup(
+                Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ventana_AlgebraicaLayout.createSequentialGroup()
+                                .addGap(19, 19, 19)
                                 .addComponent(nombre_cliente2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(txt_mensaje2, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(32, 32, 32)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGap(26, 26, 26)
+                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jButton35)
                                         .addComponent(jButton36)
                                         .addComponent(jButton37)
                                         .addComponent(jButton38)
                                         .addComponent(jButton50))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jButton42)
                                         .addComponent(jButton41)
                                         .addComponent(jButton40)
                                         .addComponent(jButton48)
-                                        .addComponent(jButton39))
+                                        .addComponent(jButton39)
+                                        .addComponent(jButton52))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jButton43)
                                         .addComponent(jButton44)
                                         .addComponent(jButton45)
                                         .addComponent(jButton49)
-                                        .addComponent(jButton47))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                                .addComponent(jButton46)
-                                .addGap(216, 216, 216))
+                                        .addComponent(jButton47)
+                                        .addComponent(jButton53))
+                                .addGap(18, 18, 18)
+                                .addGroup(Ventana_AlgebraicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jButton46)
+                                        .addComponent(jButton51))
+                                .addContainerGap(22, Short.MAX_VALUE))
         );
 
-        jTabbedPane2.addTab("Algebrica", jPanel1);
+        jTabbedPane2.addTab("Algebrica", Ventana_Algebraica);
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 399, Short.MAX_VALUE)
+        nombre_cliente3.setText("Calculadora");
+
+        txt_mensaje3.setText(" ");
+        txt_mensaje3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_mensaje3ActionPerformed(evt);
+            }
+        });
+
+        jButton65.setText("True");
+        jButton65.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton65ActionPerformed(evt);
+            }
+        });
+
+        jButton66.setText("False");
+        jButton66.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton66ActionPerformed(evt);
+            }
+        });
+
+        jButton67.setText("&");
+        jButton67.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton67ActionPerformed(evt);
+            }
+        });
+
+        jButton68.setText("=");
+        jButton68.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton68ActionPerformed(evt);
+            }
+        });
+
+        jButton69.setText("|");
+        jButton69.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton69ActionPerformed(evt);
+            }
+        });
+
+        jButton70.setText("^");
+        jButton70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton70ActionPerformed(evt);
+            }
+        });
+
+        jButton71.setText("~");
+        jButton71.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton71ActionPerformed(evt);
+            }
+        });
+
+        jButton56.setText("(");
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
+
+        jButton57.setText(")");
+        jButton57.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton57ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Ventana_LogicaLayout = new javax.swing.GroupLayout(Ventana_Logica);
+        Ventana_Logica.setLayout(Ventana_LogicaLayout);
+        Ventana_LogicaLayout.setHorizontalGroup(
+                Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                .addGap(53, 53, 53)
+                                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ventana_LogicaLayout.createSequentialGroup()
+                                                                .addComponent(jButton65)
+                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                .addComponent(jButton66))
+                                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                                                .addGap(22, 22, 22)
+                                                                                .addComponent(jButton67, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addGap(18, 18, 18)
+                                                                                .addComponent(jButton69, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                                                .addGap(28, 28, 28)
+                                                                                .addComponent(jButton70, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                                                .addComponent(jButton71, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                                                .addGap(18, 18, 18)
+                                                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                                        .addComponent(jButton57)
+                                                                        .addComponent(jButton56)))
+                                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                                .addGap(28, 28, 28)
+                                                                .addComponent(jButton68, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                .addGap(58, 58, 58)
+                                                .addComponent(txt_mensaje3, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                .addGap(114, 114, 114)
+                                                .addComponent(nombre_cliente3)))
+                                .addContainerGap(96, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-                jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGap(0, 325, Short.MAX_VALUE)
+        Ventana_LogicaLayout.setVerticalGroup(
+                Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ventana_LogicaLayout.createSequentialGroup()
+                                .addGap(19, 19, 19)
+                                .addComponent(nombre_cliente3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txt_mensaje3, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(30, 30, 30)
+                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(Ventana_LogicaLayout.createSequentialGroup()
+                                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jButton65)
+                                                        .addComponent(jButton66))
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jButton67)
+                                                        .addComponent(jButton69)
+                                                        .addComponent(jButton56))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(Ventana_LogicaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                                        .addComponent(jButton70)
+                                                        .addComponent(jButton71)))
+                                        .addComponent(jButton57))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jButton68)
+                                .addContainerGap(18, Short.MAX_VALUE))
         );
 
-        jTabbedPane2.addTab("Logica", jPanel2);
+        jTabbedPane2.addTab("Logica", Ventana_Logica);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -566,6 +754,66 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
         // TODO add your handling code here:
     }
 
+    private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void txt_mensaje3ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton65ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton71ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
+    private void jButton57ActionPerformed(java.awt.event.ActionEvent evt) {
+        // TODO add your handling code here:
+    }
+
 
 
     /**
@@ -605,6 +853,8 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
     }
 
     // Variables declaration - do not modify
+    private javax.swing.JPanel Ventana_Algebraica;
+    private javax.swing.JPanel Ventana_Logica;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
@@ -636,14 +886,28 @@ public class Cliente extends javax.swing.JFrame implements Runnable{
     private javax.swing.JButton jButton48;
     private javax.swing.JButton jButton49;
     private javax.swing.JButton jButton50;
+    private javax.swing.JButton jButton51;
+    private javax.swing.JButton jButton52;
+    private javax.swing.JButton jButton53;
+    private javax.swing.JButton jButton54;
+    private javax.swing.JButton jButton55;
+    private javax.swing.JButton jButton56;
+    private javax.swing.JButton jButton57;
+    private javax.swing.JButton jButton65;
+    private javax.swing.JButton jButton66;
+    private javax.swing.JButton jButton67;
+    private javax.swing.JButton jButton68;
+    private javax.swing.JButton jButton69;
+    private javax.swing.JButton jButton70;
+    private javax.swing.JButton jButton71;
     private javax.swing.JButton jButton9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JTabbedPane jTabbedPane2;
     private javax.swing.JLabel nombre_cliente1;
     private javax.swing.JLabel nombre_cliente2;
+    private javax.swing.JLabel nombre_cliente3;
     private javax.swing.JTextField txt_mensaje1;
     private javax.swing.JTextField txt_mensaje2;
+    private javax.swing.JTextField txt_mensaje3;
     // End of variables declaration
 
     @Override
